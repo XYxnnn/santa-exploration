@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEditor.U2D;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -11,10 +13,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Transform wallCheck;
     [SerializeField] private LayerMask wallLayer;
+    [SerializeField] private int RespawnScene;
+    
 
     public Transform grabDetect;
-    public Transform boxHolder;
-    private float rayDistance = 0.5f;
+    private float rayDistance = 0.1f;
 
     private float horizontalInput;
     private bool isFacingRight = true;
@@ -32,6 +35,8 @@ public class PlayerMovement : MonoBehaviour
     private float wallJumpingDuration = 0.4f;
     private Vector2 wallJumpingPower = new Vector2(8f, 8f);
 
+    public bool isAlive = true;
+
     private void Awake()
     {
         //Grab references for rigidbody and animator from object
@@ -42,28 +47,31 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
-        body.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, body.velocity.y);
-
-
-        if (Input.GetKey(KeyCode.Space))
+        if (isAlive)
         {
-            Jump();
+            Debug.Log("Alive");
+            horizontalInput = Input.GetAxis("Horizontal");
+            body.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, body.velocity.y);
+
+
+            if (Input.GetKey(KeyCode.Space))
+            {
+                Jump();
+            }
+
+
+            wallSlide();
+            wallJump();
+
+            if (!isWallJumping) { Flip(); }
+
+            //Set animator parameters
+            Pushing();
+            anim.SetBool("run", horizontalInput != 0);
+            //if arrow keys are not pressed, horizontal input = 0. Is 0 != 0? then run = false
+            //if arrow keys are pressed, horizontal input > 0, run = true
+            anim.SetBool("grounded", isGrounded());
         }
-
-
-        wallSlide();
-        wallJump();
-
-        if (!isWallJumping) { Flip(); }
-
-        //Set animator parameters
-        anim.SetBool("run", horizontalInput != 0);
-        //if arrow keys are not pressed, horizontal input = 0. Is 0 != 0? then run = false
-        //if arrow keys are pressed, horizontal input > 0, run = true
-        anim.SetBool("grounded", isGrounded());
-
-        Pushing();
 
     }
 
@@ -96,8 +104,13 @@ public class PlayerMovement : MonoBehaviour
     {
         RaycastHit2D grabCheck = Physics2D.Raycast(grabDetect.position, Vector2.right * transform.localScale, rayDistance);
         
+        
         if (grabCheck.collider != null && grabCheck.collider.tag == "Box")
+        {
+            Debug.Log("Triggered");
             anim.SetTrigger("push");
+        }
+            
     }
 
     private bool isGrounded()
@@ -159,4 +172,21 @@ public class PlayerMovement : MonoBehaviour
     {
         isWallJumping = false;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Trap"))
+        {
+            Die();
+            SceneManager.LoadScene(RespawnScene);
+        }
+    }
+
+    private void Die()
+    {
+        isAlive = false;
+        Debug.Log("Dead");
+        anim.SetTrigger("dead");
+    }
+
 }
