@@ -11,6 +11,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Transform wallCheck;
     [SerializeField] private LayerMask wallLayer;
+
+    public Transform grabDetect;
+    public Transform boxHolder;
+    private float rayDistance = 0.5f;
+
     private float horizontalInput;
     private bool isFacingRight = true;
     private Rigidbody2D body;
@@ -58,6 +63,8 @@ public class PlayerMovement : MonoBehaviour
         //if arrow keys are pressed, horizontal input > 0, run = true
         anim.SetBool("grounded", isGrounded());
 
+        Pushing();
+
     }
 
     private void FixedUpdate()
@@ -85,12 +92,12 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void Pushing()
     {
-        if (collision.gameObject.tag == "Ground")
-        {
-
-        }
+        RaycastHit2D grabCheck = Physics2D.Raycast(grabDetect.position, Vector2.right * transform.localScale, rayDistance);
+        
+        if (grabCheck.collider != null && grabCheck.collider.tag == "Box")
+            anim.SetTrigger("push");
     }
 
     private bool isGrounded()
