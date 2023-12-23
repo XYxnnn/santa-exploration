@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ecb51bdea4171884c94be718b449aaad
+guid: d7b0950a6413d1b42b937858376aae40
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -94,19 +94,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -123,12 +110,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle_sheet_0
+      name: all_jump_frames_sheet_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 3
         y: 0
-        width: 27
+        width: 26
         height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -137,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d459d09d42324c4db8bb00681de7f05
-      internalID: 1639845164
+      spriteID: afffb732a284bbf45ae622f45b35a964
+      internalID: -1503212468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_sheet_1
+      name: all_jump_frames_sheet_1
       rect:
         serializedVersion: 2
         x: 35
         y: 0
         width: 26
-        height: 26
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: caea72db61616754bbbdb3e65c37820d
-      internalID: -1829003520
+      spriteID: f03f58da283ef72469f5986d606e9867
+      internalID: 138249369
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_sheet_2
+      name: all_jump_frames_sheet_2
       rect:
         serializedVersion: 2
-        x: 67
+        x: 68
         y: 0
         width: 26
-        height: 26
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61d7d0b6ae6c6c749b981e0a0f26529a
-      internalID: 1407994441
+      spriteID: e277d2a342da1304398d5646e8b52d2a
+      internalID: 245174923
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_sheet_3
+      name: all_jump_frames_sheet_3
       rect:
         serializedVersion: 2
         x: 100
-        y: 0
-        width: 26
-        height: 28
+        y: 2
+        width: 23
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1293cbe88377eb748bae9221246e57f8
-      internalID: 1551708887
+      spriteID: 7859e7b2c2ad58745b55b266f58bb682
+      internalID: 656300409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_sheet_4
+      name: all_jump_frames_sheet_4
       rect:
         serializedVersion: 2
         x: 131
-        y: 0
-        width: 27
-        height: 28
+        y: 1
+        width: 23
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,19 +208,61 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d20c044f9b8ecc345ac98bb835c2a755
-      internalID: -1538265406
+      spriteID: f4596d783e110ef4dadce2fcbd0ee674
+      internalID: -369015118
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_sheet_5
+      name: all_jump_frames_sheet_5
       rect:
         serializedVersion: 2
-        x: 163
-        y: 0
-        width: 27
+        x: 164
+        y: 1
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61583f89df69a6f4cb03f8940c17e7c0
+      internalID: 145030975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: all_jump_frames_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 2
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81db61ad35d37a6458c8fa40e855e634
+      internalID: -1551486484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: all_jump_frames_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 2
+        width: 29
         height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -242,8 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1056f04af36253f4ea5aca09bc0f0f02
-      internalID: 1218574239
+      spriteID: f1895e73a5217574a865d5ac9df21d04
+      internalID: 911062762
       vertices: []
       indices: 
       edges: []
@@ -259,12 +288,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      idle_sheet_0: 1639845164
-      idle_sheet_1: -1829003520
-      idle_sheet_2: 1407994441
-      idle_sheet_3: 1551708887
-      idle_sheet_4: -1538265406
-      idle_sheet_5: 1218574239
+      all_jump_frames_sheet_0: -1503212468
+      all_jump_frames_sheet_1: 138249369
+      all_jump_frames_sheet_2: 245174923
+      all_jump_frames_sheet_3: 656300409
+      all_jump_frames_sheet_4: -369015118
+      all_jump_frames_sheet_5: 145030975
+      all_jump_frames_sheet_6: -1551486484
+      all_jump_frames_sheet_7: 911062762
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
