@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isAlive)
         {
-            Debug.Log("Alive");
+            //Debug.Log("Alive");
             horizontalInput = Input.GetAxis("Horizontal");
             body.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, body.velocity.y);
 

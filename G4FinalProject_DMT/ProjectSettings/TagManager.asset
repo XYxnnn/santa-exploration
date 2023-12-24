@@ -41,12 +41,20 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: Background
     uniqueID: 2942766085
     locked: 0
   - name: Platformer
     uniqueID: 1476479965
+    locked: 0
+<<<<<<< HEAD
+  - name: Player
+    uniqueID: 3100108015
+    locked: 0
+  - name: Sea
+    uniqueID: 2820526709
+=======
+  - name: Default
+    uniqueID: 0
+>>>>>>> 72dbda7dad474c0b52a77ef7cb725d7c9bce0988
     locked: 0

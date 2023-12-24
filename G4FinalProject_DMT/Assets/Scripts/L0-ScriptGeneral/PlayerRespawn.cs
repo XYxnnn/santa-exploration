@@ -9,9 +9,9 @@ public class PlayerRespawn : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Trap"))
+        if (collision.gameObject.CompareTag("Trap"))
         {
-            SceneManager.LoadScene(RespawnScene);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }
