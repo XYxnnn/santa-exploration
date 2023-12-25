@@ -7,6 +7,8 @@ TagManager:
   - Ground
   - Box
   - Trap
+  - Exit
+  - CollectItems
   layers:
   - Default
   - TransparentFX
@@ -46,6 +48,9 @@ TagManager:
     locked: 0
   - name: Platformer
     uniqueID: 1476479965
+    locked: 0
+  - name: CollectItems
+    uniqueID: 2129155043
     locked: 0
   - name: Player
     uniqueID: 3100108015

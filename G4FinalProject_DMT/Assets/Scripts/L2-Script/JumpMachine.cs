@@ -5,7 +5,7 @@ using UnityEngine;
 public class JumpMachine : MonoBehaviour
 {
     [SerializeField] private GameObject[] points;
-    [SerializeField] private float speed = 2f;
+    [SerializeField] private float speed = 5f;
     private int pointNum = 1;
     private float waitTime = 0.5f;
     
@@ -37,5 +37,22 @@ public class JumpMachine : MonoBehaviour
                 waitTime -= Time.deltaTime;
         }  
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.name == "Santa")
+        {
+            collision.gameObject.transform.SetParent(transform);
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.name == "Santa")
+        {
+            collision.gameObject.transform.SetParent(null);
+        }
+    }
+
 
 }
