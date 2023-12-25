@@ -6,7 +6,7 @@ public class StickyPlatform : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name == "Player 1" || collision.gameObject.name == "Player2(Clone)")
+        if (collision.gameObject.name == "Santa")
         {
             collision.gameObject.transform.SetParent(transform);
         }
@@ -14,9 +14,8 @@ public class StickyPlatform : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.name == "Player 1" || collision.gameObject.name == "Player2(Clone)")
-        {
+        if (collision.gameObject.name == "Santa")
             collision.gameObject.transform.SetParent(null);
         }
-    }
 }
+
