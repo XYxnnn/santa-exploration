@@ -37,6 +37,8 @@ public class PlayerMovement : MonoBehaviour
 
     public bool isAlive = true;
 
+    [SerializeField] private AudioSource jumpSoundEffect;
+
     private void Awake()
     {
         //Grab references for rigidbody and animator from object
@@ -56,6 +58,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (Input.GetKey(KeyCode.Space))
             {
+                jumpSoundEffect.Play();
                 Jump();
             }
 
