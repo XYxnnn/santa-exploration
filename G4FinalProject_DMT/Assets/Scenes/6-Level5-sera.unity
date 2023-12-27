@@ -424,7 +424,7 @@ GameObject:
   - component: {fileID: 117371622}
   m_Layer: 0
   m_Name: Collect5
-  m_TagString: Untagged
+  m_TagString: CollectItems
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -554,7 +554,7 @@ GameObject:
   - component: {fileID: 162849819}
   m_Layer: 0
   m_Name: Collect4
-  m_TagString: Untagged
+  m_TagString: CollectItems
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -979,7 +979,7 @@ GameObject:
   - component: {fileID: 289334136}
   m_Layer: 0
   m_Name: Collect2
-  m_TagString: Untagged
+  m_TagString: CollectItems
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5731,7 +5731,7 @@ MonoBehaviour:
   RespawnScene: 2
   grabDetect: {fileID: 770668422}
   isAlive: 1
-  jumpSoundEffect: {fileID: 781599404}
+  jumpSoundEffect: {fileID: 781599405}
 --- !u!95 &781599400
 Animator:
   serializedVersion: 5
@@ -7264,7 +7264,7 @@ GameObject:
   - component: {fileID: 1621520990}
   m_Layer: 0
   m_Name: Collect1
-  m_TagString: Untagged
+  m_TagString: CollectItems
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9015,7 +9015,7 @@ GameObject:
   - component: {fileID: 2064244032}
   m_Layer: 0
   m_Name: Collect3
-  m_TagString: Untagged
+  m_TagString: CollectItems
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
