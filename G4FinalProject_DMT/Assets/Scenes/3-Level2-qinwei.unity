@@ -5290,7 +5290,7 @@ GameObject:
   - component: {fileID: 1536923015}
   - component: {fileID: 1536923018}
   - component: {fileID: 1536923019}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Igloo_Exit
   m_TagString: Exit
   m_Icon: {fileID: 0}
