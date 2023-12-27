@@ -193,7 +193,7 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log("Dead");
         anim.SetTrigger("dead");
 
-        Invoke("LoadRespawnScene", 1.0f);
+        Invoke("LoadRespawnScene", 0.5f);
     }
 
     private void LoadRespawnScene()
