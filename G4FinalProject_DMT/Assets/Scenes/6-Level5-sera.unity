@@ -5728,6 +5728,7 @@ MonoBehaviour:
   RespawnScene: 2
   grabDetect: {fileID: 770668422}
   isAlive: 1
+  jumpSoundEffect: {fileID: 0}
 --- !u!95 &781599400
 Animator:
   serializedVersion: 5
