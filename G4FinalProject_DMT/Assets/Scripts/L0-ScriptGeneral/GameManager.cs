@@ -7,7 +7,16 @@ public class GameManager : MonoBehaviour
 {
     public GameObject pauseButton;
     public GameObject continueButton;
+    public GameObject menuButton;
     public GameObject menu;
+
+    private AudioSource audio;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        audio = GetComponent<AudioSource>();
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -22,6 +31,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0;
         pauseButton.SetActive(false);
         continueButton.SetActive(true);
+        audio.Stop();
     }
 
     public void ContinueGame()
@@ -29,11 +39,22 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
         continueButton.SetActive(false);
         pauseButton.SetActive(true);
+        audio.Play();
     }
 
-    public void SettingMenu()
+    public void OpenMenu()
     {
         menu.SetActive(true);
+    }
+
+    public void CloseMenu() 
+    {
+        menu.SetActive(false);
+    }
+
+    public void GoToHome()
+    {
+        SceneManager.LoadScene("1-StartGame");
     }
 
     public void RestartLevel()
