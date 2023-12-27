@@ -9,6 +9,10 @@ TagManager:
   - Trap
   - Exit
   - CollectItems
+  - Ring
+  - Present
+  - Cookie
+  - Wreath
   layers:
   - Default
   - TransparentFX
