@@ -424,7 +424,7 @@ GameObject:
   - component: {fileID: 117371622}
   m_Layer: 0
   m_Name: Collect5
-  m_TagString: CollectItems
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -554,7 +554,7 @@ GameObject:
   - component: {fileID: 162849819}
   m_Layer: 0
   m_Name: Collect4
-  m_TagString: CollectItems
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -979,7 +979,7 @@ GameObject:
   - component: {fileID: 289334136}
   m_Layer: 0
   m_Name: Collect2
-  m_TagString: CollectItems
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5611,9 +5611,6 @@ GameObject:
   - component: {fileID: 781599398}
   - component: {fileID: 781599397}
   - component: {fileID: 781599396}
-  - component: {fileID: 781599405}
-  - component: {fileID: 781599404}
-  - component: {fileID: 781599403}
   m_Layer: 0
   m_Name: Santa
   m_TagString: Player
@@ -5731,11 +5728,13 @@ MonoBehaviour:
   RespawnScene: 2
   grabDetect: {fileID: 770668422}
   isAlive: 1
-<<<<<<< HEAD
+
   jumpSoundEffect: {fileID: 0}
-=======
+
+
+  jumpSoundEffect: {fileID: 0}
   jumpSoundEffect: {fileID: 781599405}
->>>>>>> d6432ddc40c167b974c11c59370ac577ca4cc8af
+
 --- !u!95 &781599400
 Animator:
   serializedVersion: 5
@@ -5827,6 +5826,8 @@ Transform:
   - {fileID: 770668422}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -1, z: 0}
+
+
 --- !u!114 &781599403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5955,7 +5956,7 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
+  DopplerLevel: 0
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
@@ -6032,6 +6033,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+>>>>>>> ec8e87f086283aafaab9ddb1ae3b7c09f5bfd4c6
 --- !u!1 &847707329
 GameObject:
   m_ObjectHideFlags: 0
@@ -7268,7 +7270,7 @@ GameObject:
   - component: {fileID: 1621520990}
   m_Layer: 0
   m_Name: Collect1
-  m_TagString: CollectItems
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9019,7 +9021,7 @@ GameObject:
   - component: {fileID: 2064244032}
   m_Layer: 0
   m_Name: Collect3
-  m_TagString: CollectItems
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
