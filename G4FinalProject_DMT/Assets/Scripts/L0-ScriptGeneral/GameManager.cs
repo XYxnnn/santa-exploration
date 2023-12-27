@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            ExitLevel();
+            NextLevel();
         }
     }
 
@@ -39,6 +39,11 @@ public class GameManager : MonoBehaviour
     public void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void NextLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void ExitLevel()

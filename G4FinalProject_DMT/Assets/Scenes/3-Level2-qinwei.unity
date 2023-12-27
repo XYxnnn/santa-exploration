@@ -1310,6 +1310,53 @@ Transform:
   - {fileID: 539326391}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &505714970
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 505714972}
+  - component: {fileID: 505714971}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &505714971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505714970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a821b4eaec4e9ff4da81502241b80bf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseButton: {fileID: 0}
+  continueButton: {fileID: 0}
+  menu: {fileID: 0}
+--- !u!4 &505714972
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505714970}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1102.6265, y: 619.8323, z: -2.164794}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &539326389
 GameObject:
   m_ObjectHideFlags: 0
@@ -3608,6 +3655,7 @@ GameObject:
   - component: {fileID: 1536923016}
   - component: {fileID: 1536923015}
   - component: {fileID: 1536923018}
+  - component: {fileID: 1536923019}
   m_Layer: 0
   m_Name: Igloo_Exit
   m_TagString: Exit
@@ -3726,7 +3774,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.16171646, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3737,8 +3785,23 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.11, y: 2.01}
+  m_Size: {x: 4.7865677, y: 2.01}
   m_EdgeRadius: 0
+--- !u!114 &1536923019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536923014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a821b4eaec4e9ff4da81502241b80bf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseButton: {fileID: 0}
+  continueButton: {fileID: 0}
+  menu: {fileID: 0}
 --- !u!1 &1542872685
 GameObject:
   m_ObjectHideFlags: 0
@@ -10073,6 +10136,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 119765561}
   - {fileID: 1957551283}
+  - {fileID: 505714972}
   - {fileID: 1849684825}
   - {fileID: 1772159986}
   - {fileID: 878078388}
