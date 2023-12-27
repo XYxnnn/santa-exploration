@@ -5729,7 +5729,12 @@ MonoBehaviour:
   grabDetect: {fileID: 770668422}
   isAlive: 1
 
+
   jumpSoundEffect: {fileID: 0}
+
+
+  jumpSoundEffect: {fileID: 0}
+  jumpSoundEffect: {fileID: 781599405}
 
 
   jumpSoundEffect: {fileID: 0}
