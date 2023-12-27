@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
     public bool isAlive = true;
 
     [SerializeField] private AudioSource jumpSoundEffect;
-    [SerializeField] private AudioSource pushSoundEffect;
+  
 
     private void Awake()
     {
@@ -110,7 +110,6 @@ public class PlayerMovement : MonoBehaviour
         
         if (grabCheck.collider != null && grabCheck.collider.tag == "Box")
         {
-            pushSoundEffect.Play();
             Debug.Log("Triggered");
             anim.SetTrigger("push");
         }
