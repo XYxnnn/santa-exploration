@@ -8,6 +8,8 @@ public class CIMovement : MonoBehaviour
     [SerializeField] private float speed = 250f;
     public static int number;
     public GameObject AnnouceBoard;
+    public GameObject replayButton;
+    public GameObject quitButton;
 
     // Start is called before the first frame update
     void Update()
@@ -24,6 +26,8 @@ public class CIMovement : MonoBehaviour
         if (number == 3)
         {
             AnnouceBoard.SetActive(true);
+            replayButton.SetActive(true);
+            quitButton.SetActive(true);
         }
     }
 }
