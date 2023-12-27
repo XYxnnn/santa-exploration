@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject terminateButton;
+    public GameObject pauseButton;
     public GameObject continueButton;
+    public GameObject menu;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -19,7 +20,7 @@ public class GameManager : MonoBehaviour
     public void PauseGame()
     {
         Time.timeScale = 0;
-        terminateButton.SetActive(false);
+        pauseButton.SetActive(false);
         continueButton.SetActive(true);
     }
 
@@ -27,7 +28,12 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1;
         continueButton.SetActive(false);
-        terminateButton.SetActive(true);
+        pauseButton.SetActive(true);
+    }
+
+    public void SettingMenu()
+    {
+        menu.SetActive(true);
     }
 
     public void RestartLevel()

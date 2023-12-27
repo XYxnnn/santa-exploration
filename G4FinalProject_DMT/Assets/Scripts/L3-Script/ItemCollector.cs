@@ -11,7 +11,6 @@ public class ItemCollector : MonoBehaviour
     public static int wreath = 0;
 
     [SerializeField] private Text ringText;
-    [SerializeField] private Text presentText;
     [SerializeField] private Text cookieText;
     [SerializeField] private Text wreathText;
 
@@ -25,13 +24,6 @@ public class ItemCollector : MonoBehaviour
             Destroy(collision.gameObject);
             ring++;
             ringText.text = "x" + ring;
-        }
-        if (collision.gameObject.CompareTag("Present"))
-        {
-            collectionSoundEffect.Play();
-            Destroy(collision.gameObject);
-            present++;
-            presentText.text = "x" + present;
         }
         if (collision.gameObject.CompareTag("Cookie"))
         {
