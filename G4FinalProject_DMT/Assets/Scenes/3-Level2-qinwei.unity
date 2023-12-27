@@ -9144,7 +9144,7 @@ GameObject:
   - component: {fileID: 1737897581}
   - component: {fileID: 1737897583}
   m_Layer: 0
-  m_Name: Gift
+  m_Name: Bell2
   m_TagString: CollectItems
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9191,7 +9191,7 @@ SpriteRenderer:
   m_SortingLayerID: 2129155043
   m_SortingLayer: -3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 108136686, guid: dcf1ce0207c949745b911518223ea73c, type: 3}
+  m_Sprite: {fileID: -418735652, guid: dcf1ce0207c949745b911518223ea73c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9253,7 +9253,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.1858975, y: 1.1858975}
+    oldSize: {x: 1, y: 1.1858975}
     newSize: {x: 1.56, y: 1.85}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
