@@ -7,6 +7,7 @@ public class CIMovement : MonoBehaviour
     [SerializeField] private GameObject destination;
     [SerializeField] private float speed = 200f;
     public static int number;
+    public GameObject AnnouceBoard;
 
     // Start is called before the first frame update
     void Update()
@@ -15,10 +16,14 @@ public class CIMovement : MonoBehaviour
 
         if (transform.position == destination.transform.position)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
             number++;
             Debug.Log("number: "+number);
+        }
 
+        if (number == 3)
+        {
+            AnnouceBoard.SetActive(true);
         }
     }
 }
