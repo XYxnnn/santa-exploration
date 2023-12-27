@@ -2973,6 +2973,7 @@ MonoBehaviour:
   grabDetect: {fileID: 91004355}
   isAlive: 1
   jumpSoundEffect: {fileID: 1062641201}
+  pushSoundEffect: {fileID: 0}
 --- !u!95 &1062641198
 Animator:
   serializedVersion: 5
@@ -3074,7 +3075,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: cc5295d858253704e8c4dd64d196bb09, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 19d9a7702b6148b458e7199858fb6365, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
