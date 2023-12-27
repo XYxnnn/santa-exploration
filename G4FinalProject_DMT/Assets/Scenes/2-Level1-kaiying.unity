@@ -12363,7 +12363,6 @@ GameObject:
   - component: {fileID: 1836809514}
   - component: {fileID: 1836809513}
   - component: {fileID: 1836809512}
-  - component: {fileID: 1836809511}
   - component: {fileID: 1836809510}
   - component: {fileID: 1836809509}
   - component: {fileID: 1836809518}
@@ -12448,19 +12447,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1836809511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1836809508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2be9684b35187c84a8309a85f6a9025b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RespawnScene: 0
 --- !u!114 &1836809512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12483,7 +12469,7 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 64
-  RespawnScene: 2
+  RespawnScene: 1
   grabDetect: {fileID: 218317794}
   isAlive: 1
   jumpSoundEffect: {fileID: 1836809518}

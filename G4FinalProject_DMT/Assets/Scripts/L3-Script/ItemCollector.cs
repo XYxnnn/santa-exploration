@@ -15,31 +15,37 @@ public class ItemCollector : MonoBehaviour
     [SerializeField] private Text cookieText;
     [SerializeField] private Text wreathText;
 
+    [SerializeField] private AudioSource collectionSoundEffect;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Ring"))
         {
+            collectionSoundEffect.Play();
             Destroy(collision.gameObject);
             ring++;
-            ringText.text = "" + ring;
+            ringText.text = "x" + ring;
         }
         if (collision.gameObject.CompareTag("Present"))
         {
+            collectionSoundEffect.Play();
             Destroy(collision.gameObject);
             present++;
-            presentText.text = "" + present;
+            presentText.text = "x" + present;
         }
         if (collision.gameObject.CompareTag("Cookie"))
         {
+            collectionSoundEffect.Play();
             Destroy(collision.gameObject);
             cookie++;
-            cookieText.text = "" + cookie;
+            cookieText.text = "x" + cookie;
         }
         if (collision.gameObject.CompareTag("Wreath"))
         {
+            collectionSoundEffect.Play();
             Destroy(collision.gameObject);
             wreath++;
-            wreathText.text = "" + wreath;
+            wreathText.text = "x" + wreath;
         }
     }
 }

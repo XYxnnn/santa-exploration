@@ -14,7 +14,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform wallCheck;
     [SerializeField] private LayerMask wallLayer;
     [SerializeField] private int RespawnScene;
-    
 
     public Transform grabDetect;
     private float rayDistance = 0.1f;
@@ -190,6 +189,7 @@ public class PlayerMovement : MonoBehaviour
     private void Die()
     {
         isAlive = false;
+        body.bodyType = RigidbodyType2D.Static;
         Debug.Log("Dead");
         anim.SetTrigger("dead");
 
