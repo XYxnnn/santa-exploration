@@ -12,14 +12,26 @@ EditorBuildSettings:
     path: Assets/Scenes/2-Level1-kaiying.unity
     guid: 30e8910349ff78a48ae7247efe64754e
   - enabled: 1
+    path: Assets/Scenes/8-LoadLvl2.unity
+    guid: fd17cf917dcc4b94db4bb3737fc8eebc
+  - enabled: 1
     path: Assets/Scenes/3-Level2-qinwei.unity
     guid: 744927a383abfbf4b9a7924b4d676a8c
+  - enabled: 1
+    path: Assets/Scenes/9-LoadLvl3.unity
+    guid: 9c8460d8e63d89f46b5e3076e2573058
   - enabled: 1
     path: Assets/Scenes/4-Level3-xx.unity
     guid: 040ee48ece0e2f3428686f8f13d896f7
   - enabled: 1
+    path: Assets/Scenes/10-LoadLvl4.unity
+    guid: 3799517696db5254b8d941b61f6bf560
+  - enabled: 1
     path: Assets/Scenes/5-Level4-xy.unity
     guid: 76eb601e6c47d9941be1a9a5e549f871
+  - enabled: 1
+    path: Assets/Scenes/11-LoadLvl5.unity
+    guid: 2f337dc7b68b26442899a11ee6892439
   - enabled: 1
     path: Assets/Scenes/6-Level5-sera.unity
     guid: cab2f159dcbd3b440a399cf63ec704ea

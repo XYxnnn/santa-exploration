@@ -10377,7 +10377,7 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 64
-  RespawnScene: 4
+  RespawnScene: 7
   grabDetect: {fileID: 91004355}
   isAlive: 1
   jumpSoundEffect: {fileID: 1062641201}
