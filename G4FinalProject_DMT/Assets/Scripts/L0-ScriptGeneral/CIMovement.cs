@@ -5,7 +5,7 @@ using UnityEngine;
 public class CIMovement : MonoBehaviour
 {
     [SerializeField] private GameObject destination;
-    [SerializeField] private float speed = 200f;
+    [SerializeField] private float speed = 250f;
     public static int number;
     public GameObject AnnouceBoard;
 
