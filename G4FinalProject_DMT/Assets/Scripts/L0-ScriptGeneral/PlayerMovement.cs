@@ -181,7 +181,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Trap"))
         {
             Die();
-            SceneManager.LoadScene(RespawnScene);
+            
         }
     }
 
@@ -190,6 +190,13 @@ public class PlayerMovement : MonoBehaviour
         isAlive = false;
         Debug.Log("Dead");
         anim.SetTrigger("dead");
+
+        Invoke("LoadRespawnScene", 1.0f);
+    }
+
+    private void LoadRespawnScene()
+    {
+        SceneManager.LoadScene(RespawnScene);
     }
 
 }
