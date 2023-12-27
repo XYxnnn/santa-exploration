@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     public GameObject menuButton;
     public GameObject menu;
 
+    public static bool recollect;
+
     private AudioSource audio;
 
     // Start is called before the first frame update
@@ -60,6 +62,7 @@ public class GameManager : MonoBehaviour
     public void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        recollect = true;
     }
 
     public void NextLevel()

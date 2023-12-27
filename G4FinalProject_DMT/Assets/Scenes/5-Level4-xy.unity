@@ -10275,7 +10275,7 @@ GameObject:
   - component: {fileID: 1062641201}
   - component: {fileID: 1062641203}
   - component: {fileID: 1062641205}
-  - component: {fileID: 1062641206}
+  - component: {fileID: 1062641207}
   m_Layer: 0
   m_Name: Santa
   m_TagString: Player
@@ -10760,7 +10760,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1062641206
+--- !u!114 &1062641207
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10769,7 +10769,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1062641194}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1b68e9a61c04d641a1ac8d038b411a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 39b5828cbe6abeb409d1a26a9ad1f031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ringText: {fileID: 68857031}

@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ItemCollector : MonoBehaviour
+public class L5ItemCollector : MonoBehaviour
 {
-    public static int ring;
-    public static int cookie;
-    public static int wreath;
+    public static int ring = L4ItemCollector.ring;
+    public static int cookie = L4ItemCollector.cookie;
+    public static int wreath = L4ItemCollector.wreath;
 
     [SerializeField] private Text ringText;
     [SerializeField] private Text cookieText;
@@ -15,9 +15,17 @@ public class ItemCollector : MonoBehaviour
 
     [SerializeField] private AudioSource collectionSoundEffect;
 
-    void awake()
+
+    void Awake()
     {
-        // DontDestroyOnLoad(ringText);
+        ringText.text = "x" + ring;
+        cookieText.text = "x" + cookie;
+        wreathText.text = "x" + wreath;
+    }
+
+    void Update()
+    {
+        Recollect();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -42,6 +50,24 @@ public class ItemCollector : MonoBehaviour
             Destroy(collision.gameObject);
             wreath++;
             wreathText.text = "x" + wreath;
+        }
+
+        if (collision.gameObject.CompareTag("Trap"))
+        {
+            ring = L4ItemCollector.ring;
+            cookie = L4ItemCollector.cookie;
+            wreath = L4ItemCollector.wreath;
+        }
+    }
+
+    private void Recollect()
+    {
+        if (GameManager.recollect == true)
+        {
+            ring = L4ItemCollector.ring;
+            cookie = L4ItemCollector.cookie;
+            wreath = L4ItemCollector.wreath;
+            GameManager.recollect = false;
         }
     }
 }
