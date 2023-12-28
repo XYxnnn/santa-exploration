@@ -5853,7 +5853,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1013776591}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: RestartLevel
+        m_MethodName: PlayRestartLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8562,7 +8562,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1013776591}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: GoToHome
+        m_MethodName: PlayGoToHome
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9229,7 +9229,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1013776591}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: ExitLevel
+        m_MethodName: PlayExitLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

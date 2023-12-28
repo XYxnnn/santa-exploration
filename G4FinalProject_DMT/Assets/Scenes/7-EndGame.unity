@@ -5828,7 +5828,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &599772992
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21498,7 +21498,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.3
-  m_Text: Thanks for your help! Now North Porth Village can enjoy their Chirstmas.
+  m_Text: Thanks for your help! Now North Porth Village can enjoy their Christmas.
     Merry Christmas and good bless also for you!
 --- !u!222 &2121927820
 CanvasRenderer:
