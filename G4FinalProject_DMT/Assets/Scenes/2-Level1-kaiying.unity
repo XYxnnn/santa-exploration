@@ -1343,7 +1343,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1853134084}
+      - m_Target: {fileID: 533751105}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: PlayExitLevel
         m_Mode: 1
@@ -1672,7 +1672,7 @@ MonoBehaviour:
   continueButton: {fileID: 1446145476}
   menuButton: {fileID: 2047412459}
   menu: {fileID: 1627936142}
-  click: {fileID: 0}
+  click: {fileID: 1559275222}
 --- !u!82 &533751106
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9374,9 +9374,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1853134084}
+      - m_Target: {fileID: 533751105}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: PlayRestartLevel
+        m_MethodName: RestartLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15423,9 +15423,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1853134084}
+      - m_Target: {fileID: 533751105}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: PlayGoToHome
+        m_MethodName: GoToHome
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16137,55 +16137,6 @@ MonoBehaviour:
   cookieText: {fileID: 1151200253}
   wreathText: {fileID: 1942082505}
   collectionSoundEffect: {fileID: 1836809516}
---- !u!1 &1853134083
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1853134085}
-  - component: {fileID: 1853134084}
-  m_Layer: 0
-  m_Name: Game Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1853134084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1853134083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a821b4eaec4e9ff4da81502241b80bf2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseButton: {fileID: 669791731}
-  continueButton: {fileID: 1446145476}
-  menuButton: {fileID: 2047412459}
-  menu: {fileID: 1627936142}
-  click: {fileID: 1559275222}
---- !u!4 &1853134085
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1853134083}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1446.2448, y: 904.46857, z: -10.26125}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1907959745
 GameObject:
   m_ObjectHideFlags: 0
@@ -16915,4 +16866,3 @@ SceneRoots:
   - {fileID: 1750037427}
   - {fileID: 9139035}
   - {fileID: 1559275223}
-  - {fileID: 1853134085}

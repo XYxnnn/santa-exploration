@@ -8366,7 +8366,7 @@ MonoBehaviour:
   continueButton: {fileID: 1750673405}
   menuButton: {fileID: 319351412}
   menu: {fileID: 1136779874}
-  click: {fileID: 0}
+  click: {fileID: 891781202}
 --- !u!82 &1013776592
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13267,55 +13267,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &2053870447
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2053870449}
-  - component: {fileID: 2053870448}
-  m_Layer: 0
-  m_Name: Game Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2053870448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2053870447}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a821b4eaec4e9ff4da81502241b80bf2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseButton: {fileID: 800479571}
-  continueButton: {fileID: 1750673405}
-  menuButton: {fileID: 319351412}
-  menu: {fileID: 1136779874}
-  click: {fileID: 891781202}
---- !u!4 &2053870449
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2053870447}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1446.2448, y: 904.46857, z: -10.26125}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2064244029
 GameObject:
   m_ObjectHideFlags: 0
@@ -13594,5 +13545,4 @@ SceneRoots:
   - {fileID: 265958499}
   - {fileID: 713577790}
   - {fileID: 245811820}
-  - {fileID: 2053870449}
   - {fileID: 891781203}

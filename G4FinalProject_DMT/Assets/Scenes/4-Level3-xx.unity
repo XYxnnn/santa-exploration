@@ -9830,7 +9830,7 @@ MonoBehaviour:
   continueButton: {fileID: 2104267929}
   menuButton: {fileID: 513837749}
   menu: {fileID: 1430035753}
-  click: {fileID: 0}
+  click: {fileID: 1084272012}
 --- !u!4 &1780959526
 Transform:
   m_ObjectHideFlags: 0
@@ -16091,55 +16091,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 674606288}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1950251009
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1950251011}
-  - component: {fileID: 1950251010}
-  m_Layer: 0
-  m_Name: Game Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1950251010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1950251009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a821b4eaec4e9ff4da81502241b80bf2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseButton: {fileID: 861387505}
-  continueButton: {fileID: 2104267929}
-  menuButton: {fileID: 513837749}
-  menu: {fileID: 1430035753}
-  click: {fileID: 1084272012}
---- !u!4 &1950251011
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1950251009}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1446.2448, y: 904.46857, z: -10.26125}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2018895171
 GameObject:
   m_ObjectHideFlags: 0
@@ -16818,5 +16769,4 @@ SceneRoots:
   - {fileID: 109738582}
   - {fileID: 437324700}
   - {fileID: 604861856}
-  - {fileID: 1950251011}
   - {fileID: 1084272013}
