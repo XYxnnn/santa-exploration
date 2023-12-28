@@ -12,7 +12,8 @@ public class GameManager : MonoBehaviour
 
     public static bool recollect;
 
-    private AudioSource audio;
+    private new AudioSource audio;
+    public AudioSource click;
 
     // Start is called before the first frame update
     void Start()
@@ -49,7 +50,7 @@ public class GameManager : MonoBehaviour
         menu.SetActive(true);
     }
 
-    public void CloseMenu() 
+    public void CloseMenu()
     {
         menu.SetActive(false);
     }
@@ -59,10 +60,23 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("1-StartGame");
     }
 
+    public void PlayGoToHome()
+    {
+        click.Play();
+        Invoke("GoToHome", 0.8f);
+    }
+
+
     public void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         recollect = true;
+    }
+
+    public void PlayRestartLevel()
+    {
+        click.Play();
+        Invoke("RestartLevel", 0.8f);
     }
 
     public void NextLevel()
@@ -78,4 +92,18 @@ UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
 #endif
     }
+
+    public void PlayExitLevel()
+    {
+        click.Play();
+        Invoke("ExitLevel", 0.8f);
+    }
+
+
+    public void clickSound()
+    {
+        click.Play();
+    }
+
+
 }

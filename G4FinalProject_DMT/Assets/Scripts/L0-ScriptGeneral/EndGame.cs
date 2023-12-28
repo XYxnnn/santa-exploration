@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class EndGame : MonoBehaviour
 {
+    public AudioSource click;
+
     public void OnExitGame()
     {
 #if UNITY_EDITOR
@@ -13,4 +15,16 @@ public class EndGame : MonoBehaviour
         Application.Quit();
 #endif
     }
+
+    public void Play()
+    {
+        click.Play();
+        Invoke("OnExitGame", 1.0f);
+    }
+
+    public void clickSound()
+    {
+        click.Play();
+    }
+
 }
